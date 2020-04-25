@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: customeFont;
+    src: url('../font/Quantico-Regular.ttf');
+}
+
+.Top-bar{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #0F8FB8;
+    position: fixed;
+    padding-left: 33px;
+    padding-top: 10px;
+}
+.Top-bar h1{
+    font-size: 20px;
+    font-family: customeFont;
+    text-transform: uppercase;
+}
+
+main button.btn-create {
+    width: 10%;
+    height: 35px;
+    margin-top: 80px;
+    margin-left: 50px;
+    border: 2px solid #A7A7A7;
+    border-radius: 8px;
+    background-color: white;
+    color: #A7A7A7;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+main button.btn-create:hover{
+    background-color: white;
+    border: 2px solid #0F8FB8;
+    color: #0F8FB8;
+}
+
+main table{
+    width: 100%;
+    border-collapse: separate;
+    margin-top: 5px;
+    margin-left: 14px;
+    border-spacing: 20px;
+}
+main table td{
+    padding: 10px;
+    background-color: #A7A7A7;
+    color: white;
+    text-align: justify;
+}
+main table th{
+    padding: 10px;
+    background-color: #0F8FB8;
+    color: white;
+    text-align: left;
+}
+main table td.toolUpdate{
+    width: 5%;
+    background-color: #20EEA4;
+
+}
+main table td.toolDelete{
+    width: 5%;
+    background-color: #EE2020;
+}
+main table td button.btn-update{
+    border: none;
+    background-color: #20EEA4;
+    color: white;
+}
+main table td button.btn-delete{
+    border: none;
+    background-color: #EE2020;
+    color: white;
+}
+
