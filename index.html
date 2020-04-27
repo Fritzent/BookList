@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="./asset/css/style.css">
     <title>Booked List</title>
 </head>
@@ -18,8 +19,25 @@
 
     <main>
         
-        <button class="btn-create"> + new book </button>
+        <!-- form component section -->
+        <button id="btn-created" class="btn-create"> + new book </button>
 
+        <div class="bg-modal">
+            <div class="modal-content">
+                <form action="" method="POST" id="dataForm" onsubmit="return false;">
+                    <h2 class="txt-Title"> Title </h2>
+                    <input type="text" name="title" id="titleBook" placeholder="Title">
+                    <h2 class="txt-Category"> Category </h2>
+                    <input type="text" name="category" id="categoryBook" placeholder="Category">
+                    <h2 class="txt-Description"> Description </h2>
+                    <input class="inputDescription" name="description" id="descriptionBook" type="text" placeholder="Description">
+
+                    <button class="btn-form" id="create" onclick="testResults(this.form)"> Create </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- tabel component section -->
         <table class="list-book"> 
 
             <tr>
@@ -29,9 +47,16 @@
             </tr>
             
         </table>
+        <!-- end of tabel component section -->
 
     </main>
+    <script>
+        document.getElementById('btn-created').addEventListener('click',function(){
+        document.querySelector('.bg-modal').style.display ='flex';
+        });
+    </script>
 
     <script src="./asset/js/datashow.js"></script>
+    <script src="./asset/js/createbook.js"></script>
 </body>
 </html>

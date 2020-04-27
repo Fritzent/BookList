@@ -6,7 +6,7 @@ $(document).ready(function() {
                 console.log(data.data[i]);
                 var book = 
                 '<tr>' + 
-                '<td>' + data.data[i].title +'</td>' +
+                '<td>' + data.data[i].title +'</td>'+
                 '<td>' + data.data[i].category +'</td>' +
                 '<td>' + data.data[i].description +'</td>' +
                 '<td class="toolUpdate"> <button class="btn-update"> update </button> </td>' +
@@ -17,6 +17,4 @@ $(document).ready(function() {
             }
         }
     });
-})
-
-eh 
+});
